@@ -49,7 +49,7 @@ jobs:
            spec: ${{ github.event.inputs.spec }}
     env: 
          CYPRESS_RECORD_KEY : 14ef3788-e2c8-4ff6-a7d8-77d9f7a6b750
-         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   cypress-e2e-firefox:
     needs: cypress-e2e-chrome
     runs-on: ubuntu-latest
